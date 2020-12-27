@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/exchange/style1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="main-nav">
+        <div class="container">
+            <div class="nav-items">
+                <div class="logo"><i class="fas fa-piggy-bank fa-3x"></i>
+                <span class="omkar">Omkar</span> </div>
+                <ul class="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li class="dropdown"><a href="#">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Deposite</a></li>
+                        <li><a href="#">Withdraw</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">Esewa</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="register-form">
+                    <button class="btn">Register</button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+   <div id="showcase">
+    <div id="exchangerates">
+        <img src="./img/money.png" alt="" class="money-img">
+        <h1>Exchange Rates</h1>
+        <p>Exchange the currency by place the amount</p>
+        <div class="container">
+            <div class="currency">
+                <select id="currency-one">
+                    <option value="AED">AED</option>
+                    <option value="ARS">ARS</option>
+                    <option value="AUD">AUD</option>
+                    <option value="BGN">BGN</option>
+                    <option value="BRL">BRL</option>
+                    <option value="BSD">BSD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CLP">CLP</option>
+                    <option value="CNY">CNY</option>
+                    <option value="COP">COP</option>
+                    <option value="CZK">CZK</option>
+                    <option value="DKK">DKK</option>
+                    <option value="DOP">DOP</option>
+                    <option value="EGP">EGP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="FJD">FJD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="GTQ">GTQ</option>
+                    <option value="HKD">HKD</option>
+                    <option value="HRK">HRK</option>
+                    <option value="HUF">HUF</option>
+                    <option value="IDR">IDR</option>
+                    <option value="ILS">ILS</option>
+                    <option value="INR">INR</option>
+                    <option value="ISK">ISK</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KRW">KRW</option>
+                    <option value="KZT">KZT</option>
+                    <option value="MXN">MXN</option>
+                    <option value="MYR">MYR</option>
+                    <option value="NOK">NOK</option>
+                    <option value="NZD">NZD</option>
+                    <option value="PAB">PAB</option>
+                    <option value="PEN">PEN</option>
+                    <option value="PHP">PHP</option>
+                    <option value="PKR">PKR</option>
+                    <option value="PLN">PLN</option>
+                    <option value="PYG">PYG</option>
+                    <option value="RON">RON</option>
+                    <option value="RUB">RUB</option>
+                    <option value="SAR">SAR</option>
+                    <option value="SEK">SEK</option>
+                    <option value="SGD">SGD</option>
+                    <option value="THB">THB</option>
+                    <option value="TRY">TRY</option>
+                    <option value="TWD">TWD</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD" selected>USD</option>
+                    <option value="UYU">UYU</option>
+                    <option value="VND">VND</option>
+                    <option value="ZAR">ZAR</option>
+                  </select>
+                  <input type="number" id="number-one" placeholder="0" value="1">
+            </div>
+            <div class="swap-rate-container">
+                <button class="btns" id="swap">Swap</button>
+                <div class="rate" id="rate"></div>
+            </div>
+            <div class="currency">
+                <select id="currency-two">
+             <option value="AED" selected>AED</option>
+              <option value="ARS">ARS</option>
+              <option value="AUD">AUD</option>
+              <option value="BGN">BGN</option>
+              <option value="BRL">BRL</option>
+              <option value="BSD">BSD</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CLP">CLP</option>
+              <option value="CNY">CNY</option>
+              <option value="COP">COP</option>
+              <option value="CZK">CZK</option>
+              <option value="DKK">DKK</option>
+              <option value="DOP">DOP</option>
+              <option value="EGP">EGP</option>
+              <option value="EUR">EUR</option>
+              <option value="FJD">FJD</option>
+              <option value="GBP">GBP</option>
+              <option value="GTQ">GTQ</option>
+              <option value="HKD">HKD</option>
+              <option value="HRK">HRK</option>
+              <option value="HUF">HUF</option>
+              <option value="IDR">IDR</option>
+              <option value="ILS">ILS</option>
+              <option value="INR">INR</option>
+              <option value="ISK">ISK</option>
+              <option value="JPY">JPY</option>
+              <option value="KRW">KRW</option>
+              <option value="KZT">KZT</option>
+              <option value="MXN">MXN</option>
+              <option value="MYR">MYR</option>
+              <option value="NOK">NOK</option>
+              <option value="NZD">NZD</option>
+              <option value="PAB">PAB</option>
+              <option value="PEN">PEN</option>
+              <option value="PHP">PHP</option>
+              <option value="PKR">PKR</option>
+              <option value="PLN">PLN</option>
+              <option value="PYG">PYG</option>
+              <option value="RON">RON</option>
+              <option value="RUB">RUB</option>
+              <option value="SAR">SAR</option>
+              <option value="SEK">SEK</option>
+              <option value="SGD">SGD</option>
+              <option value="THB">THB</option>
+              <option value="TRY">TRY</option>
+              <option value="TWD">TWD</option>
+              <option value="UAH">UAH</option>
+              <option value="USD">USD</option>
+              <option value="UYU">UYU</option>
+              <option value="VND">VND</option>
+              <option value="ZAR">ZAR</option>
+            </select>
+           <input type="number" id="number-two" placeholder="0" >
+               
+            </div>
+        </div>  
+        </div>
+           <div class="showcase-content">
+               
+                   <h1>Move money in easy secure steps</h1>
+                   <p>Fast and easy you want to be more secure send and recives money sort time</p>
+                   <button class="btn-getstart">GET STARTED</button>
+   
+        </div>
+       </div>
+
+    <div class="container">
+        <div class="flex-content">
+          <div class="items">
+            <i class="fas fa-user-alt fa-4x"></i>
+              <h3>Create an account</h3>
+              <p>Minim liber accusata pro ne, mea id quot apeirian lisque. No melius nusquam sentias eam, usu ex prima iriure.</p>
+          </div>
+          <div class="items">
+            <i class="fas fa-university fa-5x"></i>
+              <h3>Attach bank accounts</h3>
+              <p>Minim liber accusata pro ne, mea id quot apeirian lisque. No melius nusquam sentias eam, usu ex prima iriure.</p>
+          </div>
+          <div class="items">
+            <i class="fas fa-money-check-alt fa-4x"></i>
+              <h3>Send money</h3>
+              <p>Minim liber accusata pro ne, mea id quot apeirian lisque. No melius nusquam sentias eam, usu ex prima iriure.</p>
+          </div>
+
+        </div>
+
+    </div> 
+     
+       
+</body>
+</html>
